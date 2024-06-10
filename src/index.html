@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Park APP</title>
+		<link href="output.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+	</head>
+	<body class="font-jakartaSans text-[#070625]">
+		<section id="content" class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-[#FBFBFB] overflow-x-hidden relative">
+			<header id="header" class="flex flex-col bg-white px-4 py-5 gap-5">
+				<div class="flex items-center justify-between w-full">
+					<!-- Back Icon -->
+					<a href="#">
+						<img src="assets/icons/arrow-left.svg" alt="Back" />
+					</a>
+					<!-- Heading -->
+					<div class="flex flex-col items-center gap-2">
+						<p class="text-base leading-[20px] font-bold text-[#070625]">Angga Park</p>
+						<!-- Distance and Price Container -->
+						<div class="flex gap-[10px]">
+							<!-- Distance -->
+							<div class="flex items-center gap-1 text-[#9F9FB5]">
+								<div class="flex items-center justify-center size-6">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<path
+											d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<path
+											d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path d="M4.15748 3.66665H4.16518" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12.8241 11.6666H12.8318" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<p class="text-sm leading-[18px] font-semibold">1.3km</p>
+							</div>
+							<!-- Price -->
+							<div class="flex items-center gap-1 text-[#9F9FB5]">
+								<div class="flex items-center justify-center size-6">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path d="M8.5 4V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path
+											d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<p class="text-sm leading-[18px] font-semibold">$5/hr</p>
+							</div>
+						</div>
+					</div>
+					<!-- Favorite Icon -->
+					<div class="flex items-center justify-center size-6 text-[#070625]">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-full">
+							<path
+								d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+				</div>
+				<!-- Navigation Button -->
+				<nav class="flex items-center justify-stretch gap-[14px] *:w-full">
+					<a href="#" class="flex items-center justify-center py-3 bg-[#3F46F9] text-sm leading-[18px] font-semibold text-white rounded-[50px]"> Basement </a>
+					<a href="#" class="flex items-center justify-center py-3 bg-[#04031F] text-sm leading-[18px] font-semibold text-white rounded-[50px]"> Ground </a>
+					<a href="#" class="flex items-center justify-center py-3 bg-[#04031F] text-sm leading-[18px] font-semibold text-white rounded-[50px]"> Top Floor </a>
+				</nav>
+			</header>
+			<!-- Parking -->
+			<main id="parking" class="flex h-full gap-5">
+				<div class="h-96 border-[2px] border-[#ECECEF] border-dashed border-spacing-10"></div>
+				<div class="h-96 border-[2px] border-[#ECECEF] border-dashed border-spacing-10"></div>
+			</main>
+			<!-- Bottom Navigation -->
+			<div id="bottom-navitaion" class="fixed bottom-0 mx-auto max-w-[640px] w-full px-3 mb-[30px]">
+				<nav class="flex items-center justify-between py-5 px-4 bg-white rounded-[18px]">
+					<div class="flex flex-col gap-2">
+						<p class="text-base leading-[20px] font-bold text-[#070625]">A5 - Angga Park</p>
+						<!-- Distance and Price Container -->
+						<div class="flex gap-[10px]">
+							<!-- Distance -->
+							<div class="flex items-center gap-1 text-[#9F9FB5]">
+								<div class="flex items-center justify-center size-6">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<path
+											d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<path
+											d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path d="M4.15748 3.66665H4.16518" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12.8241 11.6666H12.8318" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<p class="text-sm leading-[18px] font-semibold">1.3km</p>
+							</div>
+							<!-- Price -->
+							<div class="flex items-center gap-1 text-[#9F9FB5]">
+								<div class="flex items-center justify-center size-6">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path d="M8.5 4V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path
+											d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<p class="text-sm leading-[18px] font-semibold">$5/hr</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="flex items-center justify-center py-[15px] px-6 bg-[#3F46F9] text-sm leading-[18px] font-semibold text-white rounded-[50px]">Book Now</a>
+				</nav>
+			</div>
+		</section>
+	</body>
+</html>
